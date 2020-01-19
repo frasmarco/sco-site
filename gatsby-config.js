@@ -39,7 +39,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-emotion',
     {
       resolve: 'gatsby-plugin-typography',
       options: {
@@ -184,6 +183,6 @@ module.exports = {
     },
     'gatsby-plugin-sitemap',
     'gatsby-plugin-offline',
-    'gatsby-plugin-netlify'
+    'gatsby-plugin-styled-components'
   ]
 }
