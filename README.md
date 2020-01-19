@@ -1,6 +1,6 @@
 # gatsby-starter-typescript
 
-[![Build Status](https://travis-ci.org/goblindegook/gatsby-starter-typescript.svg?branch=master)](https://travis-ci.org/goblindegook/gatsby-starter-typescript)
+[![Build Status](https://travis-ci.org/goblindegook/gatsby-starter-typescript.svg?branch=master)](https://travis-ci.org/goblindegook/gatsby-starter-typescript) [![Greenkeeper badge](https://badges.greenkeeper.io/frasmarco/sco-site.svg)](https://greenkeeper.io/)
 
 A Gatsby starter using [TypeScript](https://www.typescriptlang.org) and [emotion](https://emotion.sh).
 
