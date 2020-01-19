@@ -1,8 +1,8 @@
 {
-  "name": "@goblindegook/gatsby-starter-typescript",
-  "description": "A Gatsby starter the way I like it.",
-  "version": "1.0.0",
-  "author": "Luís Rodrigues <hello@goblindegook.com>",
+  "name": "@frasmarco/sco-site",
+  "description": "www.speleocluborobico.org site source",
+  "version": "0.0.1",
+  "author": "Frassinelli Marco",
   "dependencies": {
     "@bootstrap-styled/provider": "^2.0.2",
     "@bootstrap-styled/v4": "^3.3.0",
@@ -51,8 +51,9 @@
     "react-typography": "^0.16.13",
     "regenerator-runtime": "^0.13.2",
     "styled-components": "^5.0.0",
-    "typeface-domine": "^0.0.72",
-    "typeface-montserrat": "^0.0.75",
+    "typeface-montserrat": "0.0.75",
+    "typeface-open-sans": "0.0.75",
+    "typeface-roboto": "0.0.75",
     "typography": "^0.16.17",
     "typography-breakpoint-constants": "^0.16.18",
     "utf-8-validate": "^5.0.2"

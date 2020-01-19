@@ -3,10 +3,16 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import { SiteMetadataQuery } from 'generated/types/gatsby'
 import { Header } from './Header'
+import { makeTheme } from 'bootstrap-styled'
+import { BootstrapProvider } from '@bootstrap-styled/provider'
 
 interface LayoutProps {
   readonly children?: React.ReactNode | readonly React.ReactNode[]
 }
+
+const theme: any = makeTheme({
+  '$body-bg': '#2b3034'
+})
 
 export const Layout = ({ children }: LayoutProps) => {
   const data = useStaticQuery<SiteMetadataQuery>(graphql`
@@ -15,6 +21,7 @@ export const Layout = ({ children }: LayoutProps) => {
         siteMetadata {
           title
           description
+          keywords
         }
       }
     }
@@ -22,22 +29,24 @@ export const Layout = ({ children }: LayoutProps) => {
 
   return (
     <main>
-      <Helmet
-        titleTemplate={`%s - ${data.site.siteMetadata.title}`}
-        defaultTitle={data.site.siteMetadata.title}
-        meta={[
-          {
-            name: 'description',
-            content: data.site.siteMetadata.description
-          },
-          {
-            name: 'keywords',
-            content: 'gatsby, gatsbyjs, sample, demo, typescript'
-          }
-        ]}
-      />
-      <Header title={data.site.siteMetadata.title} />
-      <div>{children}</div>
+      <BootstrapProvider theme={theme}>
+        <Helmet
+          titleTemplate={`%s - ${data.site.siteMetadata.title}`}
+          defaultTitle={data.site.siteMetadata.title}
+          meta={[
+            {
+              name: 'description',
+              content: data.site.siteMetadata.description
+            },
+            {
+              name: 'keywords',
+              content: data.site.siteMetadata.keywords
+            }
+          ]}
+        />
+        <Header title={data.site.siteMetadata.title} />
+        <div>{children}</div>
+      </BootstrapProvider>
     </main>
   )
 }

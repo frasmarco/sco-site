@@ -31,10 +31,11 @@ const gatsbyRemarkPlugins = [
 
 module.exports = {
   siteMetadata: {
-    title: 'TypeScript Gatsby Starter',
-    author: 'Luís Rodrigues',
-    description: 'A Gatsby starter using TypeScript.',
-    siteUrl: 'https://goblindegook-gatsby-starter-typescript.netlify.com'
+    title: 'Speleo Club Orobico',
+    author: 'SCO - CAI Bergamo',
+    description: 'Sito ufficiale dello Speleo CLub Orobico.',
+    siteUrl: 'https://www.speleocluborobico.org/',
+    keywords: 'speleologia, cai, orobici'
   },
   plugins: [
     'gatsby-plugin-typescript',
@@ -58,7 +59,7 @@ module.exports = {
       resolve: 'gatsby-plugin-nprogress',
       options: {
         color: '#ff5700',
-        showSpinner: false
+        showSpinner: true
       }
     },
     {
