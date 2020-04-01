@@ -1,5 +1,3 @@
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/frasmarco/sco-site) 
-
 # gatsby-starter-typescript
 
 [![Build Status](https://travis-ci.org/goblindegook/gatsby-starter-typescript.svg?branch=master)](https://travis-ci.org/goblindegook/gatsby-starter-typescript)
